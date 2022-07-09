@@ -1,0 +1,29 @@
+@-webkit-keyframes fly {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  75% {
+    top: 50%;
+    left: 50%;
+  }
+  100% {
+    top: 0%;
+    left: 100%;
+  }
+}
+  
+@keyframes fly {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  75% {
+    top: 50%;
+    left: 50%;
+  }
+    100% {
+    top: 0%;
+    left: 100%;
+  }
+}

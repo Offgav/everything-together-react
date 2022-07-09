@@ -1,0 +1,25 @@
+.win {
+    width: 115px;
+    height: 26px;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    background: #222222;
+    border: 1px solid white;
+    position: fixed;
+    top: 58%;
+    left: 46.5%; 
+}
+  
+.startbtn {
+    width: 75px;
+    height: 35px;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    background: #222222;
+    border: 1px solid white;
+    position: fixed;
+    top: 21%;
+    left: 47.5%;
+  }
