@@ -6,9 +6,6 @@
     outline: none;
     background: #222222;
     border: 1px solid white;
-    position: fixed;
-    top: 58%;
-    left: 46.5%; 
 }
   
 .startbtn {
@@ -19,7 +16,4 @@
     outline: none;
     background: #222222;
     border: 1px solid white;
-    position: fixed;
-    top: 21%;
-    left: 47.5%;
-  }
+}

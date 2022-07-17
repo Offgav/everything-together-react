@@ -1,6 +1,22 @@
 import React, {useState} from "react"
 import './TicTacToe.css'
 export function TicTacToe() {
+  const wrapper = {
+    width: '100%',
+	  height: '100%',
+	  display: 'flex',
+    justifyContent: 'center',
+  }
+   
+  const start = {
+    width: '100%',
+	  height: '100%',
+	  display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column', 
+  }
+
   const pole = {
     width: '300px',
 	  height: '300px',
@@ -9,10 +25,6 @@ export function TicTacToe() {
     fontSize: '31px',
     display: 'flex',
     flexWrap: 'wrap',
-    position: 'fixed',
-    top: '25%',
-    left: '50%',
-    transform: 'translateX(-50%)',
   }
 
   const kvadr = {
@@ -78,16 +90,19 @@ export function TicTacToe() {
 
   return (
         
-  <>          
+  <div style={wrapper}> 
+
+  <div style={start}> 
+    <button className = 'startbtn' onClick = {() => {startNewGame ()}}>
+    Очистить
+    </button>     
     <div style={pole}>
     {ch}
     </div>
-    <button className = 'startbtn' onClick = {() => {startNewGame ()}}>
-    Очистить
-    </button>
     <button className='win'>
     {Winner () ? 'Победитель' + Winner(): ' Сейчас ходит' + (x ? 'X' : '0')  }
-    </button>     
-  </> 
+    </button>  
+  </div>   
+  </div> 
   );
 }
