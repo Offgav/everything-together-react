@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/everything-together-react/static/css/main.12262ec0.css",
-    "main.js": "/everything-together-react/static/js/main.b778c470.js",
+    "main.css": "/everything-together-react/static/css/main.874d691d.css",
+    "main.js": "/everything-together-react/static/js/main.31675d7f.js",
     "static/js/787.8f5ced33.chunk.js": "/everything-together-react/static/js/787.8f5ced33.chunk.js",
     "static/media/sky.jpg": "/everything-together-react/static/media/sky.bae0042b07255e49a18c.jpg",
     "static/media/airplane4.png": "/everything-together-react/static/media/airplane4.cb1d9936bb50a78dbed6.png",
     "index.html": "/everything-together-react/index.html",
-    "main.12262ec0.css.map": "/everything-together-react/static/css/main.12262ec0.css.map",
-    "main.b778c470.js.map": "/everything-together-react/static/js/main.b778c470.js.map",
+    "main.874d691d.css.map": "/everything-together-react/static/css/main.874d691d.css.map",
+    "main.31675d7f.js.map": "/everything-together-react/static/js/main.31675d7f.js.map",
     "787.8f5ced33.chunk.js.map": "/everything-together-react/static/js/787.8f5ced33.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12262ec0.css",
-    "static/js/main.b778c470.js"
+    "static/css/main.874d691d.css",
+    "static/js/main.31675d7f.js"
   ]
 }
