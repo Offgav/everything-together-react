@@ -1,45 +1,49 @@
 import React from "react"
-export function Header (props) {
-  const buttonStyle={
-    color:'white',
-    backgroundColor:'black',
-    display:'inline-block',
-    height:'100%',
+import './Header.css'
+
+export function Header(props) {
+  let [showMenuState, setShowMenuState] = React.useState(false)
+  let m = '';
+  if (showMenuState === true) {
+    m = 'block'
   }
-  const activeStyle={
-    color:'white',
-    backgroundColor:'red',
-    display:'inline-block',
-    height:'100%',
+  else {
+    m = 'none'
   }
-   
-  let {activeState} = props
-   
-  return ( 
-  <>
-  <div style={{
-    backgroundColor:'black',
-    position: 'sticky',
-    top: '0px',
-    height:'7%',
-  }}> 
-    <button style = {activeState === 1 ? activeStyle:buttonStyle}
-    onClick = {() => {props.setState(1)}} >
-    Главная страница
-    </button>
-    <button style = {activeState === 2 ? activeStyle:buttonStyle}
-    onClick = {() => {props.setState(2)}}>
-    Семейный бюджет
-    </button>
-    <button style = {activeState === 3 ? activeStyle:buttonStyle}
-    onClick = {() => {props.setState(3)}} >
-    Крестики нолики
-    </button>
-    <button style = {activeState === 4 ? activeStyle:buttonStyle}
-    onClick = {() => {window.open("https://ru.wikipedia.org/wiki/")}} >
-    Википедия
-    </button>
-  </div>
-  </> 
+
+  return (
+    <div style={{
+      position: 'absolute',
+    }}
+      class="dropdown"
+      onMouseEnter={() => {
+        setShowMenuState(true)
+      }}
+      onMouseLeave={() => {
+        setShowMenuState(false)
+      }}>
+      <button class="dropbtn"
+        onClick={() => { props.setState(1) }}>
+        Меню
+      </button>
+      <div
+        class="dropdown-content">
+        <a
+          href="#"
+          onClick={() => { props.setState(2) }}>
+          Семейный бюджет
+        </a>
+        <a
+          href="#"
+          onClick={() => { props.setState(3) }} >
+          Крестики нолики
+        </a>
+        <a
+          href="#"
+          onClick={() => { window.open("https://ru.wikipedia.org/wiki/") }} >
+          Википедия
+        </a>
+      </div>
+    </div>
   )
 }

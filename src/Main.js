@@ -3,19 +3,21 @@ import images from './sky.jpg'
 import plane from './airplane4.png'
 import './Header.css'
 
-export function Main () {
+export function Main() {
   const img = {
     backgroundImage: `url(${images})`,
     width: '100%',
-    height: '93%',
+    height: '100%',
+    overflowX: 'hidden',
+    overflowY: 'hidden',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center center',
-    backgroundAttachment: 'fixed',
+    backgroundAttachment: 'relative',
     WebkitBackgroundSize: 'cover',
     MozBackgroundSize: 'cover',
     OBackgroundSize: 'cover',
     backgroundSize: 'cover',
-  }  
+  }
 
   const box = {
     objectFit: 'cover',
@@ -26,14 +28,18 @@ export function Main () {
     WebkitAnimation: 'fly 5s linear 0s infinite',
     MozAnimation: 'fly 5s linear 0s infinite',
     animation: 'fly 5s linear 0s infinite',
-  } 
-  
+  }
+
   return (
-  <>
-    <li style={box}>
-    </li>
-    <div style={img}> 
-    </div>
-  </>
+    <>
+
+      <li
+        style={box}>
+      </li>
+      <div
+        style={img}>
+      </div>
+
+    </>
   );
 }
